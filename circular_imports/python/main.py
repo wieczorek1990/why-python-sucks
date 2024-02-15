@@ -1,7 +1,14 @@
-from a import A
-from b import B
+import a
+import b
 
 
-print id(A())
-print id(B())
+a = a.A()
+b = b.B()
 
+a.b = b
+b.a = a
+
+print(id(a))
+print(id(a.b))
+print(id(b))
+print(id(b.a))

@@ -1,6 +1,9 @@
-from b import B
+import dataclasses
+import typing
+
+import b
 
 
+@dataclasses.dataclass
 class A:
-    b = B()
-
+    b: typing.Optional[b.B]

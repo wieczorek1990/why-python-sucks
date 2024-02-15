@@ -1,8 +1,5 @@
 require_relative 'a'
 
-class A; end
-
 class B
-  @a = A.new
+  attr_accessor :a
 end
-
