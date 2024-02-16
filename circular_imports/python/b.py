@@ -1,9 +1,8 @@
 import dataclasses
-import typing
 
-import a
+import a as a_module
 
 
 @dataclasses.dataclass
 class B:
-    a: typing.Optional[a.A]
+    a: a_module.A = a_module.A()

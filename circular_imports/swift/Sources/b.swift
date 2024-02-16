@@ -1,3 +1,3 @@
 class B {
-    var a: A?
+    var a = A()
 }

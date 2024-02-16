@@ -1,5 +1,11 @@
+class A; end
+
 require_relative 'b'
 
 class A
-  attr_accessor :b
+  @@b = B.new
+
+  def b
+    @@b
+  end
 end
